@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Shop Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        colors: {
+          clifford: '#da373d',
+          para: '#363958',
+          price: '#FABE4C',
+        }
+      }
+    }
+  }
+    </script>
+    <style>
+        .poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="poppins">
+    <header class="bg-[#FFFBF0]">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="hidden md:flex gap-3 items-center lg:flex">
+                        <div class="w-4/12 rounded-full h-full">
+                            <img src="./resources/images/penguin.jpg" alt="" class="w-full block m-auto rounded-full">
+                        </div>
+                        <h1 class="text-[#A4BC46] font-semibold text-2xl lg:text-3xl">Penguin <span class="text-para">Fashion</span></h1>
+                    </div>
+                  <div class="dropdown md:hidden lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Homepage</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>About</a></li>
+                      <li><a href="#">Projects</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center hidden md:flex lg:flex">
+                  <ul class="flex gap-4 transition-all duration-300 ">
+                    <li><a href="#" class="transition-all duration-300 hover:text-para">Homepage</a></li>
+                    <li><a href="#" class="transition-all duration-300 hover:text-para">Portfolio</a></li>
+                    <li><a href="#" class="transition-all duration-300 hover:text-para">About</a></li>
+                    <li><a href="#" class="transition-all duration-300 hover:text-para">Projects</a></li>
+                  </ul>
+
+                </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                      <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+        </nav>
+        <section class="flex flex-col lg:flex-row items-center justify-around p-2 lg:p-10 ">
+            <div class="space-y-4">
+                <h1 class="text-[#FABE4C] uppercase text-2xl lg:text-3xl font-extrabold">Be the Penguins <br>
+                <span class="text-para">of Winter</span></h1>
+                <p>Winter is coming soon. Be the Penguin of Winter session</p>
+                <button class="btn bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-xl "><img src="./resources/icons/shopping-cart 1.png" alt="" class="h-3/4">Shop Now</button>
+            </div>
+            <div>
+                <img src="./resources/images/model.png" alt="" class="w-full block m-auto">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="p-5 space-y-4 my-10">
+            <h1 class="text-2xl lg:text-3xl text-para font-bold">Women Jacket</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-4/5 m-auto">
+                <div class="p-3 transition-all duration-500 hover:bg-slate-200 rounded-xl space-y-4">
+                    <div class="p-3 bg-[#F1F1F1] rounded-2xl">
+                        <img src="./resources/images/jacket-1.png" alt="" class="w-full m-auto block">
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="text-2xl text-para font-bold">Yellow Coat Jacket </h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-price text-2xl lg:text-3xl font-extrabold">$2250</h1>
+                            <button class="btn bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-xl"><img src="./resources/icons/shopping-cart 1.png" class="h-3/4" alt=""> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 transition-all duration-500 hover:bg-slate-200 rounded-xl space-y-4">
+                    <div class="p-3 bg-[#F1F1F1] rounded-2xl">
+                        <img src="./resources/images/jacket-2.png" alt="" class="w-full m-auto block">
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="text-2xl text-para font-bold">Yellow Coat Jacket </h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-price text-2xl lg:text-3xl font-extralight">$2250</h1>
+                            <button class="btn bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-xl"><img src="./resources/icons/shopping-cart 1.png" class="h-3/4" alt=""> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 transition-all duration-500 hover:bg-slate-200 rounded-xl space-y-4">
+                    <div class="p-3 bg-[#F1F1F1] rounded-2xl">
+                        <img src="./resources/images/jacket-3.png" alt="" class="w-full m-auto block">
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="text-2xl text-para font-bold">Yellow Coat Jacket </h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-price text-2xl lg:text-3xl font-extrabold">$2250</h1>
+                            <button class="btn bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-xl"><img src="./resources/icons/shopping-cart 1.png" class="h-3/4" alt=""> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-5 space-y-4 mb-10">
+            <h1 class="text-2xl lg:text-3xl text-para font-bold">Men Jacket</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-4/5 m-auto">
+                <div class="p-3 transition-all duration-500 hover:bg-slate-200 rounded-xl space-y-4">
+                    <div class="p-3 bg-[#F1F1F1] rounded-2xl">
+                        <img src="./resources/images/jacket-4.png" alt="" class="w-full m-auto block">
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="text-xl lg:text-2xl text-para font-bold">Yellow Coat Jacket </h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-price text-3xl font-extrabold">$2250</h1>
+                            <button class="btn bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-xl"><img src="./resources/icons/shopping-cart 1.png" class="h-3/4" alt=""> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 transition-all duration-500 hover:bg-slate-200 rounded-xl space-y-4">
+                    <div class="p-3 bg-[#F1F1F1] rounded-2xl">
+                        <img src="./resources/images/jacket-5.png" alt="" class="w-full m-auto block">
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="text-xl lg:text-2xl text-para font-bold">Yellow Coat Jacket </h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-price text-2xl lg:text-3xl font-extrabold">$2250</h1>
+                            <button class="btn bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-xl"><img src="./resources/icons/shopping-cart 1.png" class="h-3/4" alt=""> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 transition-all duration-500 hover:bg-slate-200 rounded-xl space-y-4">
+                    <div class="p-3 bg-[#F1F1F1] rounded-2xl">
+                        <img src="./resources/images/jacket-6.png" alt="" class="w-full m-auto block">
+                    </div>
+                    <div class="space-y-2">
+                        <h1 class="text-2xl text-para font-bold">Yellow Coat Jacket </h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-price text-2xl lg:text-3xl font-extrabold">$2250</h1>
+                            <button class="btn bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-xl"><img src="./resources/icons/shopping-cart 1.png" class="h-3/4" alt=""> Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col-reverse lg:flex-row justify-between items-center p-2 lg:w-4/5 m-auto gap-4">
+            <div class="space-y-3">
+                <div class="flex gap-3 items-center bg-slate-100 rounded-2xl
+                p-4">
+                    <div>
+                        <img src="./resources/icons/house.png" alt="" class="w-2/4 block m-auto" >
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="text-para font-bold text-2xl">Find the Perfect Fit</h1>
+                        <p>Different People Different Styles. </p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center bg-slate-100 rounded-2xl
+                p-4">
+                    <div>
+                        <img src="./resources/icons/box.png" alt="" class="w-2/4 block m-auto" >
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="text-para font-bold text-2xl">Free Exchanges</h1>
+                        <p>One of the many reasons you can shop
+                            with peace of mind. </p>
+                    </div>
+                </div>
+                <div class="flex gap-3 items-center bg-slate-100 rounded-2xl
+                p-4">
+                    <div>
+                        <img src="./resources/icons/question.png" alt="" class="w-2/4 block m-auto" >
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="text-para font-bold text-2xl">Contact Our Seller</h1>
+                        <p>They are here to help you. That's quite 
+                            literally what we pay them for.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <img src="./resources/images/shopping.png" alt="" class="m-auto w-full block">
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
